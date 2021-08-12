@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+config:
+  base:
+    endpoint:
+      customer: http://localhost:8081/customer
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27018/ProyectoS1Bank
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: service-credit
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
