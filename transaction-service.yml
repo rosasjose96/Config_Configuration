@@ -1,0 +1,18 @@
+server:
+  port: 8095
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27018/ProyectoS1Bank
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: transaction-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
