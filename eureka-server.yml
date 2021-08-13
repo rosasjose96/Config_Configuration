@@ -11,3 +11,6 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
   instance: 
     hostname: localhost
+spring:
+  application:
+    name: eureka-server
