@@ -1,0 +1,22 @@
+server:
+  port: 8086
+
+config:
+  base:
+    endpoint:
+      customer: http://localhost:8090/api/credit
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27018/ProyectoS1Bank
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: debit-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
