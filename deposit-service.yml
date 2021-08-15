@@ -1,11 +1,6 @@
 server:
   port: 8086
 
-config:
-  base:
-    endpoint:
-      customer: http://localhost:8090/api/credit
-
 spring:
   data:
     mongodb:
@@ -14,7 +9,7 @@ spring:
     hibernate:
       ddl-auto: update
   application:
-    name: debit-service
+    name: deposit-service
 
 eureka:
   client:
