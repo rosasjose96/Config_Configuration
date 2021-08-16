@@ -9,10 +9,7 @@ config:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27018/ProyectoS1Bank
-  jpa:
-    hibernate:
-      ddl-auto: update
+      uri: mongodb://localhost:27018/ProyectoS1Bank 
   application:
     name: credit-service
 

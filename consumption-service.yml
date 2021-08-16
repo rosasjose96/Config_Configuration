@@ -5,9 +5,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27018/ProyectoS1Bank
-  jpa:
-    hibernate:
-      ddl-auto: update
   application:
     name: consumption-service
 

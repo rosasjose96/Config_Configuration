@@ -4,9 +4,6 @@ server:
 spring:
   application:
     name: customer-service
-  jpa:
-    hibernate:
-      ddl-auto: update
   data:
     mongodb:
       uri: mongodb://localhost:27018/BootcampEverisS1
@@ -14,7 +11,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka
 
 
 
