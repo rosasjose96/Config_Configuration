@@ -6,7 +6,7 @@ spring:
     mongodb:
       uri: mongodb://localhost:27018/ProyectoS1Bank
   application:
-    name: retir-service
+    name: retire-service
 
 eureka:
   client:
