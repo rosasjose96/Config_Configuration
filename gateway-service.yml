@@ -65,3 +65,7 @@ spring:
           uri: lb://servicio-fixedTermAccound
           predicates:
             - Path=/api/fixedTermAccound/**
+        - id: fixedTermAccound-service
+            uri: lb://fixedTermAccound-service
+            predicates:
+              - Path=/api/fixedTermAccound/**
