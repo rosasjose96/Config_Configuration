@@ -17,7 +17,6 @@ spring:
           uri: lb://customer-service
           predicates:
             - Path=/customer/**
-            - Path=/customertype/**
         - id: credit-service
           uri: lb://credit-service
           predicates:
