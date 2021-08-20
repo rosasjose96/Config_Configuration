@@ -1,12 +1,12 @@
 server:
-  port: 8090
+  port: 8094
 
 spring:
   data:
     mongodb:
       uri: mongodb://mongo-server:27017/ProyectoS1Bank
   application:
-    name: credit-service
+    name: consumption-service
 
 eureka:
   client:

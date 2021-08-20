@@ -1,0 +1,20 @@
+server:
+  port: 8092
+
+config:
+  base:
+    endpoint:
+      customer: http://localhost:8090/api/credit
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo-server:27017/ProyectoS1Bank
+  application:
+    name: payment-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
+

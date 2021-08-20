@@ -1,12 +1,20 @@
 server:
-  port: 8090
+  port: 8093
+
+config:
+  base:
+    endpoint:
+      customer: http://creditcard-service:8091/api/creditcard
 
 spring:
   data:
     mongodb:
       uri: mongodb://mongo-server:27017/ProyectoS1Bank
+  jpa:
+    hibernate:
+      ddl-auto: update
   application:
-    name: credit-service
+    name: paymentCredit-service
 
 eureka:
   client:

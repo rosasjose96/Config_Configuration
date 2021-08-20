@@ -1,0 +1,71 @@
+server:
+  port: 8100
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: customer-service
+          uri: lb://customer-service
+          predicates:
+            - Path=/customer/**
+        - id: credit-service
+          uri: lb://credit-service
+          predicates:
+            - Path=/api/credit/**
+        - id: creditcard-service
+          uri: lb://creditcard-service
+          predicates:
+            - Path=/api/creditcard/**
+        - id: payment-service
+          uri: lb://payment-service
+          predicates:
+            - Path=/api/payment/**
+        - id: paymentCredit-service
+          uri: lb://paymentCredit-service
+          predicates:
+            - Path=/api/paymentcard/**
+        - id: consumption-service
+          uri: lb://consumption-service
+          predicates:
+            - Path=/api/consumption/**
+        - id: transaction-service
+          uri: lb://transaction-service
+          predicates:
+            - Path=/api/transaction/**
+        - id: savingaccount-service
+          uri: lb://savingaccount-service
+          predicates:
+            - Path=/api/savingAccount/**
+        - id: deposit-service
+          uri: lb://deposit-service
+          predicates:
+            - Path=/api/deposit/**
+        - id: retire-service
+          uri: lb://retire-service
+          predicates:
+            - Path=/api/retire/**
+        - id: currentaccount-service
+          uri: lb://currentaccount-service
+          predicates:
+            - Path=/api/currentAccount/**
+        - id: transfer-service
+          uri: lb://transfer-service
+          predicates:
+            - Path=/api/transfer/**
+        - id: servicio-fixedTermAccound
+          uri: lb://servicio-fixedTermAccound
+          predicates:
+            - Path=/api/fixedTermAccound/**
+        - id: fixedTermAccound-service
+            uri: lb://fixedTermAccound-service
+            predicates:
+              - Path=/api/fixedTermAccound/**
