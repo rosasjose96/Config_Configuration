@@ -6,7 +6,7 @@ spring:
     name: customer-service
   data:
     mongodb:
-      uri: mongodb://localhost:27018/BootcampEverisS1
+      uri: mongodb://localhost:27018/ProyectoS1Bank
 
 eureka:
   client:
