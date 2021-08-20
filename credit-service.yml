@@ -9,7 +9,7 @@ config:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27018/ProyectoS1Bank 
+      uri: mongodb://BootcampS1everis:27018/ProyectoS1Bank 
   application:
     name: credit-service
 
