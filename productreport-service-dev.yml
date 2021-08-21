@@ -2,9 +2,6 @@ server:
   port: 8083
 
 spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27018/ProyectoS1Bank
   application:
     name: productreport-service
 
