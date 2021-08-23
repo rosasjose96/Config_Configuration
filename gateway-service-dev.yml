@@ -69,3 +69,11 @@ spring:
             uri: lb://fixedTermAccound-service
             predicates:
               - Path=/api/fixedTermAccound/**
+        - id: productreport-service
+          uri: lb://productreport-service
+          predicates:
+            - Path=/api/report/**
+        - id: debitpayment-service
+          uri: lb://debitpayment-service
+          predicates:
+            - Path=/api/debitPayment/**
