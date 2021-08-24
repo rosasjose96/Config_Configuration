@@ -1,5 +1,7 @@
 server:
   port: 8081
+  error:
+    include-stacktrace: always
 
 spring:
   application:
@@ -34,4 +36,14 @@ resilience4j:
         instances:
             customerServiceCircuitBreaker:
                 baseConfig: default
+  
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
+      root: DEBUG
+
 
