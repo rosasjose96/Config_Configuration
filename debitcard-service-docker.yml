@@ -6,7 +6,7 @@ spring:
     mongodb:
       uri: mongodb://mongo-server:27017/ProyectoS1Bank
   application:
-    name: debitpayment-service
+    name: debitcard-service
 
 eureka:
   client:
