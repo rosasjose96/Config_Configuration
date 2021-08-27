@@ -10,7 +10,7 @@ spring:
     hibernate:
       ddl-auto: update
   application:
-    name: fixedTermAccound-service
+    name: fixedTermAccount-service
 
 eureka:
   client:
