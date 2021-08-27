@@ -5,6 +5,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27018/ProyectoS1Bank
+      auto-index-creation: true
   application:
     name: debitcard-service
 
