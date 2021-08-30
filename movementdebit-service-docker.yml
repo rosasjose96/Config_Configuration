@@ -1,0 +1,15 @@
+server:
+  port: 8079
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo-server:27017/ProyectoS1Bank
+      auto-index-creation: true
+  application:
+    name: movementdebit-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
