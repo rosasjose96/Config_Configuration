@@ -6,9 +6,6 @@ spring:
     mongodb:
       uri: mongodb://localhost:27018/ProyectoS1Bank
       auto-index-creation: true
-  jpa:
-    hibernate:
-      ddl-auto: update
   application:
     name: fixedTermAccount-service
 
