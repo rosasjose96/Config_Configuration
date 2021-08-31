@@ -1,0 +1,14 @@
+server:
+  port: 8077
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo-server:27017/ProyectoS1Bank
+  application:
+    name: yanki-transaction-yanki-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
