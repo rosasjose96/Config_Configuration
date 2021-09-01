@@ -9,6 +9,7 @@ spring:
   application:
     name: yanki-service
   kafka:
+    bootstrap-servers: localhost:9092
     consumer:
       bootstrap-servers: localhost:9092
       group-id: associate_yanki
