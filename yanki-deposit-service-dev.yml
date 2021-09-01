@@ -8,6 +8,17 @@ spring:
       auto-index-creation: true
   application:
     name: yanki-deposit-service
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: associate_ans
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 eureka:
   client:
